@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch6afrlg60jgf"]
+
+[ext_resource type="PackedScene" uid="uid://btk2vdaxnsgr4" path="res://ball.tscn" id="1_t1okx"]
+[ext_resource type="PackedScene" uid="uid://dt60654g3e1m8" path="res://hoop.tscn" id="2_f3brx"]
+[ext_resource type="PackedScene" uid="uid://bcb3abucwknrk" path="res://bounds_x.tscn" id="3_3hq8j"]
+[ext_resource type="PackedScene" uid="uid://be7f3wgx2xgkv" path="res://bounds_y.tscn" id="4_4rc8n"]
+
+[node name="Court" type="Node2D"]
+metadata/_edit_vertical_guides_ = [1143.0, 768.0]
+metadata/_edit_horizontal_guides_ = [-202.0, 185.0]
+
+[node name="ball" parent="." instance=ExtResource("1_t1okx")]
+position = Vector2(145, 459)
+
+[node name="Hoop" parent="." instance=ExtResource("2_f3brx")]
+position = Vector2(946, 314)
+
+[node name="Bounds_X" parent="." instance=ExtResource("3_3hq8j")]
+
+[node name="Bounds_X2" parent="." instance=ExtResource("3_3hq8j")]
+position = Vector2(6, 642)
+
+[node name="Bounds_Y" parent="." instance=ExtResource("4_4rc8n")]
+
+[node name="Bounds_Y2" parent="." instance=ExtResource("4_4rc8n")]
+position = Vector2(1154, 0)
