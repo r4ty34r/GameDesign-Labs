@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://did55brtpc61q"]
+
+[ext_resource type="PackedScene" uid="uid://dii8t2sro23y4" path="res://player.tscn" id="1_0rkrc"]
+[ext_resource type="PackedScene" uid="uid://8l03j6wubpad" path="res://border.tscn" id="2_5w2gq"]
+[ext_resource type="PackedScene" uid="uid://dqrrcyvv6ewsg" path="res://damageScene.tscn" id="3_x2r8q"]
+
+[node name="mainScene" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [600.0]
+
+[node name="player" parent="." instance=ExtResource("1_0rkrc")]
+position = Vector2(607, 474)
+
+[node name="border" parent="." instance=ExtResource("2_5w2gq")]
+
+[node name="border2" parent="." instance=ExtResource("2_5w2gq")]
+position = Vector2(1186, -45)
+rotation = 1.5708
+
+[node name="border3" parent="." instance=ExtResource("2_5w2gq")]
+position = Vector2(12, -14)
+rotation = 1.5708
+
+[node name="border4" parent="." instance=ExtResource("2_5w2gq")]
+position = Vector2(5, 622)
+
+[node name="Area2D" parent="." instance=ExtResource("3_x2r8q")]

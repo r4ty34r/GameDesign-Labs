@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dii8t2sro23y4"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_6xm8o"]
+[ext_resource type="Texture2D" uid="uid://b56mpl78sh4ye" path="res://MOGGED_USA_ON_CHAIN.png" id="1_xytf6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lp4rb"]
+radius = 124.4
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_6xm8o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.615869, 0.615869)
+texture = ExtResource("1_xytf6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_lp4rb")
